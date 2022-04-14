@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 // class App extends Component {
 //   render() {
@@ -18,18 +18,33 @@ import React, { Component } from 'react';
 //   }
 // }
 
-class App extends Component {
-  render() {
-    // return <input type="text" onClick={() => { console.log("I am clicked") }} />;
-    return (
-      // <div>
-      <React.Fragment>
-        <label htmlFor='bar'>bar</label>
-        <input type="text" onChange={() => { console.log("I am clicked") }} />
-      </React.Fragment>
-      // </div>
-    )
-  }
+// class App extends Component {
+//   render() {
+//     // return <input type="text" onClick={() => { console.log("I am clicked") }} />;
+//     return (
+//       // <div>
+//       <React.Fragment>
+//         <label htmlFor='bar'>bar</label>
+//         <input type="text" onChange={() => { console.log("I am clicked") }} />
+//       </React.Fragment>
+//       // </div>
+//     )
+//   }
+// }
+
+const App = () => {
+  return (
+    <div>
+      <Cat />
+      <Cat />
+      <Cat />
+      <Cat />
+    </div>
+  )
+}
+
+const Cat = () => {
+  return <div>Meow!</div>
 }
 
 export default App;
